@@ -1,12 +1,11 @@
 let wHeight = window.innerHeight;
 let wWidth = window.innerWidth;
 
-let player = {};
-
 let canvas = document.querySelector('#the-canvas');
 let context = canvas.getContext('2d');
 canvas.width = wWidth;
 canvas.height = wHeight;
+let player = {};
 
 const loginModal = new bootstrap.Modal(document.querySelector('#loginModal'));
 const spawnModal = new bootstrap.Modal(document.querySelector('#spawnModal'));
