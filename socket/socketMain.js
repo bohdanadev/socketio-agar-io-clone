@@ -1,5 +1,9 @@
 const io = require('../server').io;
 const app = require('../server').app;
+const checkForOrbCollisions =
+  require('./checkCollisions').checkForOrbCollisions;
+const checkForPlayerCollisions =
+  require('./checkCollisions').checkForPlayerCollisions;
 
 const Player = require('./classes/Player');
 const PlayerConfig = require('./classes/PlayerConfig');
@@ -18,6 +22,8 @@ const settings = {
 };
 
 const players = [];
+const playersForUsers = [];
+let intervalId;
 
 initGame();
 
