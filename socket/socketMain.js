@@ -1,9 +1,9 @@
-const io = require('../server').io;
-const app = require('../server').app;
+const io = require('../servers').io;
+const app = require('../servers').app;
 const checkForOrbCollisions =
-  require('./checkCollisions').checkForOrbCollisions;
+  require('./classes/checkCollisions').checkForOrbCollisions;
 const checkForPlayerCollisions =
-  require('./checkCollisions').checkForPlayerCollisions;
+  require('./classes/checkCollisions').checkForPlayerCollisions;
 
 const Player = require('./classes/Player');
 const PlayerConfig = require('./classes/PlayerConfig');

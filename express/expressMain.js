@@ -1,6 +1,6 @@
 // Entrypoint for Express
 
-const app = require('../server').app;
-const io = require('../server').io;
+const app = require('../servers').app;
+const io = require('../servers').io;
 
 module.exports = app;
